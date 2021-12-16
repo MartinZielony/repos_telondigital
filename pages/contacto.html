@@ -1,86 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Implemento SEO-->
-    <meta name="description" content="Formulario de Contacto de TELÓN DIGITAL - ¡Mandanos tu consulta!">
-    <meta name="keywords"  content="MUSICAL, MUSICALES, ESPECTACULO, ESPECTACULOS, OBRA, OBRAS, TELON, TEATRO, CONTACTO, CONSULTAS, QUEJAS">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Implemento SEO-->
+        <meta name="description" content="Formulario de Contacto de TELÓN DIGITAL - ¡Mandanos tu consulta!">
+        <meta name="keywords"  content="MUSICAL, MUSICALES, ESPECTACULO, ESPECTACULOS, OBRA, OBRAS, TELON, TEATRO, CONTACTO, CONSULTAS, QUEJAS">
+        
+        <!--Invoco CDN Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--Invoco CSS-->
+        <link rel="stylesheet" href="../css/estilosSASSY.css"/>
 
-    <link rel="stylesheet" href="../css/estilosSASSY.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Contacto - Telón Digital</title>
-</head>
-    <body class="container-fluid" id="grillaCONTACTO"> <!--Invoco Grilla para organizar FORMULARIO DE CONTACTO-->
-        <header class="fondoTitulo">
+        <!--Invoco Fuente ROBOTO de GFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <!--Defino Título de la página-->
+        <title>Contacto - Telón Digital</title>
+    </head>
+
+    <body class="container-fluid colorFondoBody" id="grillaCONTACTO"> <!--Invoco Grilla para organizar FORMULARIO DE CONTACTO-->
+        <header class="container-fluid colorFondoFooterHeader">
             <h1 class="titulo"><a href="../index.html">TELÓN DIGITAL (LOGO)</a></h1>
         </header>
         
-        <nav id="menuNavegacion">
-            <a href="nosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="calendario.html">Calendario</a>
-            <a href="galeria.html">Galería</a>            
+        <nav id="menuNavegacion" class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="../index.html" role="tab" aria-selected="false">Home</a>
+            <a class="nav-link active" data-toggle="pill" href="contacto.html" role="tab" aria-selected="true">Contacto</a>
+            <a class="nav-link" data-toggle="pill" href="calendario.html" role="tab" aria-selected="false">Calendario</a>
+            <a class="nav-link" data-toggle="pill" href="galeria.html" role="tab" aria-selected="false">Galería</a>
+            <a class="nav-link" data-toggle="pill" href="nosotros.html" role="tab" aria-selected="false">Nosotros</a>
         </nav>
 
         <!--Inicio del formulario-->
-        <form action="gracias_contacto.php" method="GET" enctype="application/x-www-form-urlencoded" id="formContacto" class="formulario fondoItem">
-            <h2 class="titulo">Formulario de Contacto</h2>
-            <hr/>
-            
+        <form class="flex-column justify-content-between formulario">
+            <h2 class="fw-bold text-center">Formulario de Contacto</h2>
             <div class="form-group">
                 <label for="nombreUsuario">Ingrese su Nombre y Apellido</label>
-                <input name="NombreUsuario" type="text" placeholder="Nombre y Apellido">
+                <input type="text" class="form-control" id="nombreUsuario" placeholder="Texto Aquí">
             </div>
-
             <div class="form-group">
-                <label for="nombreUsuario">Ingrese su dirección de Correo Electrónico (Email)</label>
-                <input name="emailUsuario" type="email" placeholder="Email">
+                <label for="emailUsuario">Ingrese su dirección de correo electrónico</label>
+                <input type="email" class="form-control" id="emailUsuario" placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos a compartir su dirección de correo Electrónico con alguien más.</small>
             </div>
-            
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="newsletterChkBox">
+                <label class="form-check-label fs-5" for="exampleCheck1">Inscribirme al Newsletter de TELÓN DIGITAL</label>
+            </div>
+            <select class="form-control" placeholer="Area de Consulta">
+                <option selected disabled>Area de Consulta</option>
+                <option>Entradas</option>
+                <option>Reseñas</option>
+                <option>Otro</option>
+            </select>
             <div class="form-group">
-                <label for="newsletter">Inscribirme al Newsletter:</label>
-                <input type="checkbox" name="Newsletter chkbox" value="1">
+                <label for="exampleFormControlTextarea1">Escriba su consulta:</label>
+                <textarea class="form-control" id="consulta" rows="3"></textarea>
             </div>
-            
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Área de Consulta
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Entradas</a></li>
-                    <li><a class="dropdown-item" href="#">Reseñas</a></li>
-                    <li><a class="dropdown-item" href="#">Otro</a></li>
-                </ul>
+            <div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
             </div>
-
-            <!--Ayuda! No entiendo por qué no funciona este dropdown, probé copiar el tag directamente desde getbootstrap.com/docs/4.0/components/dropdowns pero todavía no aparecen las opciones-->
-
-            <div class="form-group">
-                <label for="Consulta">Escriba su consulta</label>
-                <input name="Consulta" type="text" placeholder="Escriba aquí su consulta" class="inputTextoGrande">
-            </div>
-
-            <button type="submit" class="btn btn-primary">
-                Enviar
-            </button>
-            
-            <button type="reset" class="btn btn-secondary">
-                Resetear
-            </button> 
         </form>
 
-        <footer class="colorFondoFooter">
+        <footer class="colorFondoFooterHeader container-fluid">    
             <h3 class="presentacion">Copyright © Martín Zielony 2021</h3>
-            <div>
-                <a href="../index.html">Index</a><span> >> Contacto</span>
-            </div>
         </footer>
     </body>
 </html>

@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Implemento SEO-->
-    <meta name="description" content="Calendario de Funciones de TELÓN DIGITAL - Fechas de funciones y acceso a venta de entradas">
-    <meta name="keywords"  content="MUSICAL, MUSICALES, ESPECTACULO, ESPECTACULOS, OBRA, OBRAS, TELON, TEATRO, FUNCIONES, ENTRADAS">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Implemento SEO-->
+        <meta name="description" content="Calendario de Funciones de TELÓN DIGITAL - Fechas de funciones y acceso a venta de entradas">
+        <meta name="keywords"  content="MUSICAL, MUSICALES, ESPECTACULO, ESPECTACULOS, OBRA, OBRAS, TELON, TEATRO, FUNCIONES, ENTRADAS">
+        
+        <!--Invoco CDN Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/estilosSASSY.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Calendario - Telón Digital</title>
-</head>
+        <!--Invoco CSS-->
+        <link rel="stylesheet" href="../css/estilosSASSY.css"/>
 
-    <body id="grillaCALENDARIO" class="container-fluid"> <!--Invoco grilla para organizar CALENDARIO-->
-        <header class="fondoTitulo">
+        <!--Invoco Fuente ROBOTO de GFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <!--Defino Título de la Página-->
+        <title>Calendario - Telón Digital</title>
+    </head>
+
+    <body id="grillaCALENDARIO" class="container-fluid colorFondoBody"> <!--Invoco grilla para organizar CALENDARIO-->
+        <header class="container-fluid colorFondoFooterHeader">
             <h1 class="titulo"><a href="../index.html">TELÓN DIGITAL (LOGO)</a></h1>
         </header>
-    
-        <nav id="menuNavegacion">
-            <a href="nosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="calendario.html">Calendario</a>
-            <a href="galeria.html">Galería</a>            
+        
+        <nav id="menuNavegacion" class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="../index.html" role="tab" aria-selected="false">Home</a>
+            <a class="nav-link" data-toggle="pill" href="contacto.html" role="tab" aria-selected="false">Contacto</a>
+            <a class="nav-link active" data-toggle="pill" href="calendario.html" role="tab" aria-selected="true">Calendario</a>
+            <a class="nav-link" data-toggle="pill" href="galeria.html" role="tab" aria-selected="false">Galería</a>
+            <a class="nav-link" data-toggle="pill" href="nosotros.html" role="tab" aria-selected="false">Nosotros</a>
         </nav>
 
-    <main id="mainCALENDARIO"> <!--Contenedor de la sección CALENDARIO (Incluyendo título y subtítulo)-->
-        <h2 class="subtitulo">Calendario de Funciones</h2>
-        <h3 class="presentacion">Próximamente podrán clickear la función para comprar entradas.</h3>
-        <table border="2" cellpadding="10" cellspacing="10"> <!--ÉSTE es el calendario-->
-            <tbody>
-                <tr>
-                    <td>10/10 La Desgracia 18hs</td>
-                    <td>11/10 Lo Quiero Ya 19hs</td>
-                    <td>14/10 Mamá Está Más Chiquita 20hs</td>
-                    <td>
-                        <ul>
-                            <li class="listAfuera">15/10 La Desgracia</li>
-                            <li class="listAdentro">18hs</li>
-                            <li class="listAdentro">20hs</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li class="listAfuera">17/10 La Desgracia</li>
-                            <li class="listAdentro">18hs</li>
-                            <li class="listAdentro">20hs</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ol>
-                            <li class="listAfuera">18/10 Lo Quiero Ya</li>
-                            <li class="listAdentro">19hs</li>
-                            <li class="listAdentro">20:30hs</li>
-                        </ol>
-                    </td>
-                    <td>21/10 Mamá Está Más Chiquita 20hs</td>
-                    <td>22/10 La Desgracia 20:30hs</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-    
-        <footer>
+        <main id="mainCALENDARIO" class="container-fluid"> <!--Contenedor de la sección CALENDARIO (Incluyendo título y subtítulo)-->
+            <h2 class="subtitulo">Calendario de Funciones</h2>
+            <h3>El calendario se limita a esta semana y la siguiente. ¡Hacé click en una función para comprar entradas!</h3>
+            <table class="table calendario">
+                <thead>
+                    <tr>
+                        <th scope="col">Domingo 19/12</th>
+                        <th scope="col">Lunes 20/12</th>
+                        <th scope="col">Martes 21/12</th>
+                        <th scope="col">Miércoles 22/12</th>
+                        <th scope="col">Jueves 23/12</th>
+                        <th scope="col">Viernes 24/12</th>
+                        <th scope="col">Sábado 25/12</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
+                        <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 17hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 18hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
+                        <td></td>
+                        <td><a href="#">Lo Quiero Ya 19hs</a></td>
+                        <td></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td></td>
+                        <td><a href="#">La Desgracia 20hs</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table calendario">
+                <thead>
+                    <tr>
+                        <th scope="col">Domingo 12/12</th>
+                        <th scope="col">Lunes 13/12</th>
+                        <th scope="col">Martes 14/12</th>
+                        <th scope="col">Miércoles 15/12</th>
+                        <th scope="col">Jueves 16/12</th>
+                        <th scope="col">Viernes 17/12</th>
+                        <th scope="col">Sábado 18/12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
+                        <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 17hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 18hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
+                        <td></td>
+                        <td><a href="#">Lo Quiero Ya 19hs</a></td>
+                        <td></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td></td>
+                        <td><a href="#">La Desgracia 20hs</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </main>
+        
+        <footer class="colorFondoFooterHeader container-fluid">    
             <h3 class="presentacion">Copyright © Martín Zielony 2021</h3>
-            <div>
-                <a href="../index.html">Index</a><span> >> Calendario</span>
-            </div>
         </footer>
     </body>
 </html>
