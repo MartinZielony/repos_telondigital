@@ -99,6 +99,23 @@ input{
 iframe{
     width: 100%;
 }
+
+div{
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        img{
+            width: 75%;
+        }
+        h5{
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
 //CLASES
     //PALETA DE COLOR
     .colorFondoFooterHeader{
@@ -458,9 +475,17 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1vw 0vw 1vw 0vw
 }
 
-} //fin media 320px
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+}
+    //fin media 320px
     
 @media only screen and (min-width: 1024px){
     
@@ -483,22 +508,7 @@ iframe{
     width: 560px;
 }
 
-div{
-    a{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        img{
-            width: 75%;
-        }
-        h5{
-            font-weight: bold;
-            text-align: center;
-        }
-    }
-}
+
 //CLASES
     
 
@@ -641,8 +651,9 @@ div{
     width: 100%;
     align-items: center;
     }
+
+#artEnLista{
+    margin: 0vw;
+}
 }
 
-
-        
-    
