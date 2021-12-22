@@ -150,7 +150,13 @@
     grid-area: fotos; }
   .calendario {
     background-color: white;
-    border-color: black; }
+    border-color: black;
+    overflow: scroll;
+    margin-bottom: 1rem; }
+  table thead {
+    border-bottom: 3px solid black; }
+  table tbody tr {
+    border-bottom: 1px solid black; }
   .clr--LD {
     text-decoration: none;
     color: blueviolet;
@@ -167,7 +173,7 @@
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-weight: bold; }
   .imagenRedes {
-    width: 160px;
+    width: 50%;
     margin: 1vw; }
   #grillaINDEX {
     display: grid;

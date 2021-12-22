@@ -244,6 +244,20 @@ div{
 .calendario{
     background-color: white;
     border-color: black;
+    overflow: scroll;
+    margin-bottom: 1rem;
+}
+
+table{
+    thead{
+        border-bottom:3px solid black;
+    }
+    
+    tbody{
+        tr{
+            border-bottom:1px solid black;
+        }
+    }
 }
 
 .clr--LD{
@@ -268,7 +282,7 @@ div{
 }
 
 .imagenRedes{
-    width: 160px;
+    width: 50%;
     margin: 1vw
 }
 //IDs
