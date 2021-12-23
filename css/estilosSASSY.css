@@ -68,6 +68,10 @@
     div a h5 {
       font-weight: bold;
       text-align: center; }
+  nav div div a {
+    color: white;
+    font-weight: bold;
+    padding: 1vw 0vw 1vw 0vw; }
   .colorFondoFooterHeader {
     background: #00b7cc; }
   .colorFondoBody {
@@ -93,10 +97,10 @@
   .titulo {
     text-align: center;
     color: #212121;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 3rem;
     text-decoration: none;
-    padding: 1vw; }
+    margin: 1vw; }
   .subtitulo {
     font-weight: bold;
     font-size: 2rem;
@@ -314,6 +318,10 @@
     font-size: large; }
   iframe {
     width: 560px; }
+  nav div div a {
+    display: inline;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    font-size: large; }
   .divArticulos {
     overflow-y: scroll; }
   .divNoticia {
@@ -333,36 +341,35 @@
   .imagenObra:hover {
     transform: scale(2); }
   .bienvenide {
-    height: 75%; }
+    height: 85%; }
   .contGALERIA {
     width: fit-content;
     height: fit-content; }
   .fondoItem {
     color: #b6433e; }
   #grillaINDEX {
-    grid-template-areas: "header header header" "nav article aside" "nav article aside" "section section section" "footer footer footer";
+    grid-template-areas: "header header header" "nav nav nav" "article article aside" "section section section" "footer footer footer";
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 1vw; }
   #grillaNOSOTROS {
-    grid-template-areas: "header header" "nav article" "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-column-gap: 1vw; }
+    grid-template-areas: "header" "nav" "article" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 10fr 1fr; }
   #grillaCONTACTO {
-    grid-template-areas: "header header" "nav form" "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-column-gap: 1vw; }
+    grid-template-areas: "header" "nav" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 10fr 1fr; }
   #grillaCALENDARIO {
-    grid-template-areas: "header header" "nav main" "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-column-gap: 1vw; }
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 10fr 1fr; }
   #grillaGALERIA {
-    grid-template-areas: "header header" "nav main" "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-column-gap: 1vw; }
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 10fr 1fr; }
   #grillaFOTOS {
-    grid-template-areas: "header header" "nav article" "footer footer";
-    grid-template-columns: 1fr 5fr;
-    grid-column-gap: 1vw; }
+    grid-template-areas: "header header" "nav nav" "article article" "footer footer";
+    grid-template-columns: 1fr 1fr; }
   #contNoticia {
     height: 40vw; }
   #contArticulos {
@@ -370,11 +377,12 @@
     height: 40vw;
     width: 80%; }
   #menuNavegacion {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    height: 40vw;
+    height: fit-content;
     width: fit-content;
-    padding: 0vw 1vw 0vw 1vw; }
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    margin-top: 1vw; }
   #promocionados {
     flex-flow: row nowrap;
     justify-content: space-between;

@@ -116,6 +116,18 @@ div{
         }
     }
 }
+
+nav{
+    div{
+        div{
+            a{
+                color:white;
+                font-weight: bold;
+                padding: 1vw 0vw 1vw 0vw;
+            }
+        }
+    }
+}
 //CLASES
     //PALETA DE COLOR
     .colorFondoFooterHeader{
@@ -160,10 +172,10 @@ div{
 .titulo{
     text-align: center;
     color: #212121;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 3rem;
     text-decoration: none;
-    padding: 1vw;
+    margin:1vw;
 }
 
 .subtitulo{
@@ -522,12 +534,19 @@ iframe{
     width: 560px;
 }
 
-
+nav{
+    div{
+        div{
+            a{
+                display: inline;
+                padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+                font-size: large;
+            }
+        }
+    }
+}
 //CLASES
     
-
-
-
 .divArticulos{
     overflow-y: scroll;
 }
@@ -561,7 +580,7 @@ iframe{
 }
 
 .bienvenide{
-    height: 75%;
+    height: 85%;
 }
 
 .contGALERIA{
@@ -573,13 +592,14 @@ iframe{
     color:#b6433e;
 }
 
+
 //IDs
     //GRILLAS
     #grillaINDEX{    
         grid-template-areas:
             "header header header"
-            "nav article aside"
-            "nav article aside"
+            "nav nav nav"
+            "article article aside"
             "section section section"
             "footer footer footer";
         grid-template-columns: 1fr 2fr 1fr;
@@ -588,47 +608,51 @@ iframe{
 
     #grillaNOSOTROS{    
         grid-template-areas:
-            "header header"
-            "nav article"
-            "footer footer";
-        grid-template-columns: 1fr 5fr;
-        grid-column-gap: 1vw;
+            "header"
+            "nav"
+            "article"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
     }
 
     #grillaCONTACTO{    
         grid-template-areas:
-            "header header"
-            "nav form"
-            "footer footer";
-        grid-template-columns: 1fr 5fr;
-        grid-column-gap: 1vw;
+            "header"
+            "nav"
+            "form"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
     }
 
     #grillaCALENDARIO{    
         grid-template-areas:
-            "header header"
-            "nav main"
-            "footer footer";
-        grid-template-columns: 1fr 5fr;
-        grid-column-gap: 1vw;
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
     }
 
     #grillaGALERIA{    
         grid-template-areas:
-            "header header"
-            "nav main"
-            "footer footer";
-        grid-template-columns: 1fr 5fr;
-        grid-column-gap: 1vw;
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
     }
 
     #grillaFOTOS{    
         grid-template-areas:
             "header header"
-            "nav article"
+            "nav nav"
+            "article article"
             "footer footer";
-        grid-template-columns: 1fr 5fr;
-        grid-column-gap: 1vw;
+        grid-template-columns: 1fr 1fr;
     }
 //fin grillas
 
@@ -643,12 +667,13 @@ iframe{
 }
 
 #menuNavegacion{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 
-    height: 40vw;
+    height: fit-content;
     width: fit-content;
-    padding: 0vw 1vw 0vw 1vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    margin-top: 1vw;
 }
 
 #promocionados{
