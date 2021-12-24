@@ -32,7 +32,7 @@
     <title>Galería - Telón Digital</title>
 </head>
 
-<body id="grillaGALERIA" class="container-fluid colorFondoBody">
+<body id="grillaGALERIA" class="container-fluid m-0 p-0 colorFondoBody">
     <header class="container-fluid colorFondoFooterHeader">
         <a href="../index.html">
             <h1 class="titulo">TELÓN DIGITAL</h1>
@@ -40,15 +40,13 @@
     </header>
 
     <nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <a href="../index.html">Home</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="calendario.html">Calendario</a>
-                <a href="galeria.html">Galería</a>
-                <a href="nosotros.html" role="tab" aria-selected="false">Nosotros</a>
-            </div>
-        </div>
+        <ul class="collapse bg-dark p-4" id="navbarToggleExternalContent">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="galeria.html" class="activo">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
         <div class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -62,17 +60,12 @@
 
     <main id="mainGALERIA" class="contGALERIA colorFondoArticulo">
         <h2 class="subtitulo">Galería de Fotos</h2>
-        <ul>
-            <li>
-                <h3><a href="fotosDesgracia.html" class="clr--LD">La Desgracia</a></h3>
-            </li>
-            <li>
-                <h3><a href="fotosMamaEstaMasChiquita.html" class="clr--MEMC">Mamá Está Más Chiquita</a></h3>
-            </li>
-            <li>
-                <h3><a href="fotosLoQuieroYa.html" class="clr--LQY">Lo Quiero Ya</a></h3>
-            </li>
-        </ul>
+            <h3><a href="fotosDesgracia.html" class="clr--LD">La Desgracia</a></h3>
+            
+            <h3><a href="fotosMamaEstaMasChiquita.html" class="clr--MEMC">Mamá Está Más Chiquita</a></h3>
+            
+            <h3><a href="fotosLoQuieroYa.html" class="clr--LQY">Lo Quiero Ya</a></h3>
+            
     </main>
 
     <footer class="colorFondoFooterHeader container-fluid">

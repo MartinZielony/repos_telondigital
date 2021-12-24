@@ -45,6 +45,7 @@ nav{
 
 main{
     grid-area: main;
+    border: solid 3px;
 }
 
 article{
@@ -65,7 +66,11 @@ section{
 }
 
 footer{
-    grid-area: footer;    
+    grid-area: footer;
+    h3{
+        padding: 1vw;
+        margin: 0;
+    }
 }
 
 button{
@@ -89,6 +94,7 @@ label{
     font-size: medium;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
+    padding: 0vw 2vw 0vw 2vw;
 }
 
 input{
@@ -113,21 +119,50 @@ div{
         h5{
             font-weight: bold;
             text-align: center;
+            padding: 2vw 0vw 2vw 0vw
         }
     }
 }
 
 nav{
-    div{
-        div{
-            a{
-                color:white;
-                font-weight: bold;
-                padding: 1vw 0vw 1vw 0vw;
+    ul{
+        margin-bottom: 0;
+        li{
+        a{
+            display: block;
+            color:white;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 1vw 0vw 1vw 0vw;
+            padding:0.3vw
+    }
+    a:hover{
+        color: #ff6fa9;
+    }
+}
+    }
+        
+}
+
+table{
+    thead{
+        th{
+            font-weight: bold;
+            padding: 1vw;
+        }
+    }
+    tbody{
+        tr{
+            th{
+                padding: 1vw;
+            }
+            td{
+                    padding: 1vw; 
             }
         }
     }
 }
+
 //CLASES
     //PALETA DE COLOR
     .colorFondoFooterHeader{
@@ -181,7 +216,8 @@ nav{
 .subtitulo{
     font-weight: bold;
     font-size: 2rem;
-    padding: 1vw 1vw 0vw 1vw;
+    padding: 2vw;
+
 }
 
 .titNoticia{
@@ -192,7 +228,7 @@ nav{
 }
 
 .noticia{
-    font-size: 1rem;
+    font-size: 2rem;
     width: auto;
     padding: 1vw;
     margin: 0px;
@@ -229,6 +265,7 @@ nav{
     width: fit-content;
     height: fit-content;
     padding: 1vw;
+    margin: 1vw;
 }
 
 .bienvenide{
@@ -244,9 +281,11 @@ nav{
 }
 
 .contGALERIA{
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
     display: flex;
+    padding: 1vw;
+    align-items: center;
 }
 
 .contFOTOS{
@@ -277,6 +316,7 @@ table{
     color: blueviolet;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-weight: bold;
+    padding: 0.5vw;
 }
 
 .clr--LQY{
@@ -284,6 +324,7 @@ table{
     color: blue;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-weight: bold;
+    padding: 0.5vw;
 }
 
 .clr--MEMC{
@@ -291,11 +332,20 @@ table{
     color: darkcyan;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-weight: bold;
+    padding: 0.5vw;
 }
 
 .imagenRedes{
     width: 50%;
     margin: 1vw
+}
+
+.activo{
+    color: #ff6fa9;
+    border: 3px #ff6fa9 solid;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 1vw;
 }
 
 //IDs
@@ -425,6 +475,7 @@ table{
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #mainCALENDARIO{
@@ -455,6 +506,7 @@ table{
     flex-direction: column;
     align-items: center;
 
+    margin: 2vw;
     height: fit-content;
 }
 
@@ -528,6 +580,7 @@ main{
 
 label{
     font-size: large;
+    padding: 0vw 0.5vw 0vw 0.5vw;
 }
 
 iframe{
@@ -536,13 +589,59 @@ iframe{
 
 nav{
     div{
-        div{
-            a{
-                display: inline;
-                padding: 0.5vw 0.5vw 0.5vw 0.5vw;
-                font-size: large;
+        a{
+            
+        }
+    }
+}
+
+nav{
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+        a{
+            display: inline;
+            margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+
+            font-size: large;
+    }
+    a:hover{
+        color: #ff6fa9;
+    }
+}}}
+
+div{a{h5{
+            padding: 0.5vw;
+        }
+    }
+}
+
+table{
+    thead{
+        th{
+            font-weight: bold;
+            padding: 0.3vw;
+        }
+        font-size: 2rem;
+    }
+    tbody{
+        tr{
+            th{
+                font-size: 2rem;
+                padding: 0.3vw;
+            }
+            td{
+                    font-size: 2rem;
+                    padding: 0.3vw; 
             }
         }
+    }
+}
+
+footer{
+    h3{
+        padding: 0.5vw;
     }
 }
 //CLASES
@@ -563,6 +662,7 @@ nav{
 
 .subtitulo{
     font-size: 3rem;
+    padding: 1vw;
 }
 
 .titNoticia{
@@ -572,7 +672,7 @@ nav{
 .noticia{
     font-size: 2rem;
     width: 50vw;
-    padding: 0vw 1vw 0vw 1vw;
+    padding: 1vw 0vw 1vw 0vw;
 }
 
 .imagenObra:hover{
@@ -586,6 +686,7 @@ nav{
 .contGALERIA{
     width: fit-content;
     height: fit-content;
+    padding: 0.5vw;
 }
 
 .fondoItem{
@@ -598,6 +699,9 @@ nav{
     margin: 0.5vw 0vw 0.5vw 0vw;
 }
 
+.activo{
+    padding: 0.5vw;
+}
 //IDs
     //GRILLAS
     #grillaINDEX{    
@@ -663,6 +767,7 @@ nav{
 
 #contNoticia{
     height: 40vw;
+    margin-left: 1vw;
 }
 
 #contArticulos{

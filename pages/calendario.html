@@ -33,7 +33,7 @@
     <title>Calendario - Telón Digital</title>
 </head>
 
-<body id="grillaCALENDARIO" class="container-fluid colorFondoBody">
+<body id="grillaCALENDARIO" class="container-fluid m-0 p-0 colorFondoBody">
     <header class="container-fluid colorFondoFooterHeader">
         <a href="../index.html">
             <h1 class="titulo">TELÓN DIGITAL</h1>
@@ -41,15 +41,13 @@
     </header>
 
     <nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <a href="../index.html">Home</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="calendario.html">Calendario</a>
-                <a href="galeria.html">Galería</a>
-                <a href="nosotros.html" role="tab" aria-selected="false">Nosotros</a>
-            </div>
-        </div>
+        <ul class="collapse bg-dark p-4" id="navbarToggleExternalContent">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="calendario.html" class="activo">Calendario</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
         <div class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,74 +62,75 @@
     <main id="mainCALENDARIO" class="container-fluid colorFondoArticulo">
         <h2 class="subtitulo">Calendario de Funciones</h2>
         <h3>El calendario se limita a esta semana y la siguiente. ¡Hacé click en una función para comprar entradas!</h3>
-        <table class="table-responsive calendario">
-            <thead>
-                <tr>
-                    <th scope="col">Domingo 19/12</th>
-                    <th scope="col">Lunes 20/12</th>
-                    <th scope="col">Martes 21/12</th>
-                    <th scope="col">Miércoles 22/12</th>
-                    <th scope="col">Jueves 23/12</th>
-                    <th scope="col">Viernes 24/12</th>
-                    <th scope="col">Sábado 25/12</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
-                    <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
-                    <td><a href="#">Lo Quiero Ya 17hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
-                    <td><a href="#">Lo Quiero Ya 18hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
-                    <td></td>
-                    <td><a href="#">Lo Quiero Ya 19hs</a></td>
-                    <td></td>
-                    <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
-                    <td></td>
-                    <td><a href="#">La Desgracia 20hs</a></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table-responsive calendario">
-            <thead>
-                <tr>
-                    <th scope="col">Domingo 12/12</th>
-                    <th scope="col">Lunes 13/12</th>
-                    <th scope="col">Martes 14/12</th>
-                    <th scope="col">Miércoles 15/12</th>
-                    <th scope="col">Jueves 16/12</th>
-                    <th scope="col">Viernes 17/12</th>
-                    <th scope="col">Sábado 18/12</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
-                    <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
-                    <td><a href="#">Lo Quiero Ya 17hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
-                    <td><a href="#">Lo Quiero Ya 18hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
-                    <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
-                    <td></td>
-                    <td><a href="#">Lo Quiero Ya 19hs</a></td>
-                    <td></td>
-                    <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
-                    <td></td>
-                    <td><a href="#">La Desgracia 20hs</a></td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="overflow-scroll">
+            <table class="table calendario">
+                <thead>
+                    <tr>
+                        <th scope="col">Domingo 19/12</th>
+                        <th scope="col">Lunes 20/12</th>
+                        <th scope="col">Martes 21/12</th>
+                        <th scope="col">Miércoles 22/12</th>
+                        <th scope="col">Jueves 23/12</th>
+                        <th scope="col">Viernes 24/12</th>
+                        <th scope="col">Sábado 25/12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
+                        <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 17hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 18hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
+                        <td class="bg-black"></td>
+                        <td><a href="#">Lo Quiero Ya 19hs</a></td>
+                        <td class="bg-black"></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td class="bg-black"></td>
+                        <td><a href="#">La Desgracia 20hs</a></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <table class="table calendario">
+                <thead>
+                    <tr>
+                        <th scope="col">Domingo 12/12</th>
+                        <th scope="col">Lunes 13/12</th>
+                        <th scope="col">Martes 14/12</th>
+                        <th scope="col">Miércoles 15/12</th>
+                        <th scope="col">Jueves 16/12</th>
+                        <th scope="col">Viernes 17/12</th>
+                        <th scope="col">Sábado 18/12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 18:30hs</a></th>
+                        <td><a href="#">Lo Quiero Ya 18:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 17hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 19:30hs</a></td>
+                        <td><a href="#">Lo Quiero Ya 18hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td><a href="#">Mamá Está Más Chiquita 18hs</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#">La Desgracia 20:30hs</a></th>
+                        <td class="bg-black"></td>
+                        <td><a href="#">Lo Quiero Ya 19hs</a></td>
+                        <td class="bg-black"></td>
+                        <td><a href="#">Mamá Está Más Chiquita 20hs</a></td>
+                        <td class="bg-black"></td>
+                        <td><a href="#">La Desgracia 20hs</a></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
     </main>
 
     <footer class="colorFondoFooterHeader container-fluid">
