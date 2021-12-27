@@ -56,6 +56,20 @@ article{
 
 aside{
     grid-area: aside;
+
+    div{
+        a{
+            img{
+                background: white;
+                transition: 0.2s;
+            }
+        }
+        a:hover{
+            img{
+                opacity: 50%;
+            }
+        }
+    }
 }
 
 section{
@@ -63,6 +77,22 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
+
+        a{
+            img{
+                background: white;
+                transition: .2s;
+            }
+        }
+        a:hover{
+            img{
+                opacity: 50%;
+            }
+            span{
+                color:black;
+                font-weight: bold;
+            }
+        }
 }
 
 footer{
@@ -138,7 +168,7 @@ nav{
             padding:0.3vw
     }
     a:hover{
-        color: #ff6fa9;
+        color: #00b7cc;
     }
 }
     }
@@ -175,11 +205,7 @@ table{
     }
 
     .colorFondoArticulo{
-        background: #ffd0cc;    
-    }
-
-    .colorFondoNav{
-        background: #ff6fa9;
+        background: #cff2ff;    
     }
 
 .nav-link{
@@ -245,7 +271,6 @@ table{
 }
 
 .presentacion{
-    color:#a10532;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
@@ -342,8 +367,8 @@ table{
 }
 
 .activo{
-    color: #ff6fa9;
-    border: 3px #ff6fa9 solid;
+    color: #00b7cc;
+    border: 3px #00b7cc solid;
     border-radius: 25px;
     width: fit-content;
     padding: 1vw;
@@ -575,10 +600,6 @@ header{
     width: auto;
 }
 
-main{
-    border: solid 5px;
-}
-
 label{
     font-size: large;
     padding: 0vw 0.5vw 0vw 0.5vw;
@@ -589,10 +610,13 @@ iframe{
 }
 
 nav{
+    ul{
+        display: flex !important;
+    }
     div{
-        a{
-            
-        }
+        display: none;
+        visibility: hidden;
+        height: 0px;
     }
 }
 
@@ -608,7 +632,7 @@ nav{
             font-size: large;
     }
     a:hover{
-        color: #ff6fa9;
+        color: #00b7cc;
     }
 }}}
 
@@ -677,7 +701,7 @@ footer{
 }
 
 .imagenObra:hover{
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .bienvenide{
@@ -702,6 +726,10 @@ footer{
 
 .activo{
     padding: 0.5vw;
+}
+
+.colorFondoArticulo{
+    border: solid 5px black;        
 }
 //IDs
     //GRILLAS
@@ -801,6 +829,14 @@ footer{
     width: 100%;
     align-items: center;
     }
+
+#mainGALERIA{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
 
 #artEnLista{
     margin: 0vw;
